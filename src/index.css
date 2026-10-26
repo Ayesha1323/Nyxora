@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    background-color: #fdfbf7;
+    color: #1e082b;
+  }
+
+  body {
+    background-color: #fdfbf7;
+    color: #1e082b;
+    font-family: var(--font-body);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #2e1065;
+  }
+}
+
+/* Custom Scrollbar - Warm Cream Track with Dark Purple Thumb */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b0764;
+  border-radius: 9999px;
+  border: 2px solid #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #581c87;
+}
+
+/* Modern Card & Glass Utilities for Cream & Dark Purple */
+.cream-card {
+  background: #ffffff;
+  border: 1px solid rgba(88, 28, 135, 0.12);
+  box-shadow: 0 4px 20px -2px rgba(46, 16, 101, 0.05), 0 2px 6px -1px rgba(46, 16, 101, 0.02);
+  transition: all 0.25s ease;
+}
+
+.cream-card:hover {
+  border-color: rgba(124, 58, 237, 0.35);
+  box-shadow: 0 12px 28px -4px rgba(46, 16, 101, 0.1);
+}
+
+.purple-solid-card {
+  background: #240733;
+  color: #fdfbf7;
+  border: 1px solid rgba(147, 51, 234, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(27, 4, 41, 0.4);
+}
+
+.btn-purple-gradient {
+  background: linear-gradient(135deg, #2e1065 0%, #3b0764 50%, #581c87 100%);
+  color: #faf8f5;
+  box-shadow: 0 4px 14px rgba(46, 16, 101, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-purple-gradient:hover {
+  background: linear-gradient(135deg, #3b0764 0%, #581c87 50%, #7c3aed 100%);
+  box-shadow: 0 6px 20px rgba(88, 28, 135, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Elegant Purple Gradient Text */
+.text-gradient-purple {
+  background: linear-gradient(135deg, #1e082b 0%, #3b0764 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
